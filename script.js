@@ -3,20 +3,11 @@ const qrCode = new QRCodeStyling({
     width: 300,
     height: 300,
     dotsOptions: {
-        color: "#000",
-        gradient: {
-            type: "linear",
-            rotation: 0,
-            colorStops: [
-                { offset: 0, color: "#ff0000" },
-                { offset: 0.5, color: "#00ff00" },
-                { offset: 1, color: "#0000ff" }
-            ]
-        },
+        color: "#000", // Cor mais escura para melhor contraste
         type: "rounded"
     },
     backgroundOptions: {
-        color: "#ffffff"
+        color: "#ffffff" // Fundo branco para garantir contraste
     },
     imageOptions: {
         crossOrigin: "anonymous",
