@@ -59,28 +59,3 @@ button:hover {
     position: relative;
 }
 
-.qrcode-container::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff0000);
-    background-size: 600% 600%;
-    animation: rgb-glow 10s linear infinite;
-    padding: 15px;
-    border-radius: 12px;
-    z-index: -1;
-}
-
-@keyframes rgb-glow {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
