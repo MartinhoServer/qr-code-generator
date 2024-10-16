@@ -89,3 +89,45 @@ button:hover {
     border-radius: 12px;
     z-index: -1;
 }
+/* Media query para telas menores que 600px (ex.: smartphones) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px; /* Reduz o tamanho da fonte do título para se ajustar melhor em telas menores */
+    }
+
+    input, button {
+        width: 90%; /* Ajusta a largura dos inputs e botões para 90% da tela em dispositivos móveis */
+        justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin: 0px;
+    }
+
+    .logo {
+        max-width: 300px; /* Reduz a largura máxima da logotipo para melhor se adaptar a telas menores */
+        margin-bottom: 10px;
+        justify-content: center;
+    align-items: center;
+    }
+
+    .qrcode-container {
+        width: 100%; /* Garante que o QR code ocupe toda a largura disponível */
+        max-width: 300px; /* Define uma largura máxima para manter a proporção */
+        justify-content: center;
+        align-items: center;}
+
+    .qrcode-container::before {
+        border-radius: 8px; /* Ajusta os cantos arredondados para combinar com o tamanho reduzido */
+    }
+}
+
+/* Media query para telas menores que 400px (ex.: smartphones bem pequenos) */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 18px; /* Diminui ainda mais o tamanho do título para evitar que quebre linhas */
+    }
+
+    input, button {
+        font-size: 14px; /* Ajusta o tamanho da fonte para inputs e botões */
+    }
+}
